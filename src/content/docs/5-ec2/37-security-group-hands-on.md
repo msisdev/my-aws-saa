@@ -1,6 +1,6 @@
 ---
 title: 037 security group hands-on
-description:
+ 
 ---
 
 EC2 > Security Groups > MY_SECURITY_GROUP

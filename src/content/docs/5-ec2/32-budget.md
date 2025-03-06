@@ -1,6 +1,6 @@
 ---
 title: 032 budget
-description:
+ 
 ---
 
 ## Bills

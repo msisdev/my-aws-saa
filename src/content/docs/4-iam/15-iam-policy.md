@@ -1,6 +1,6 @@
 ---
 title: 015 iam policy
-description:
+ 
 ---
 
 ## IAM Policies inheritance

@@ -1,6 +1,6 @@
 ---
 title: 016 iam policy hands-on
-description:
+ 
 ---
 
 1. Add/Remove user from group

@@ -1,6 +1,6 @@
 ---
 title: 036 security group
-description:
+ 
 ---
 
 Control how traffic is allowed into EC2

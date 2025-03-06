@@ -8,8 +8,11 @@ export default defineConfig({
 		starlight({
 			title: 'My Docs',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/msisdev/my-aws-saa',
 			},
+			customCss: [
+				"./src/styles/custom.css",
+			],
 			sidebar: [
 				// {
 				// 	label: 'Guides',
@@ -19,16 +22,24 @@ export default defineConfig({
 				// 	],
 				// },
 				{
+					label: 'welcome',
+					autogenerate: { directory: 'welcome' },
+					collapsed: true,
+				},
+				{
 					label: '3-start',
 					autogenerate: { directory: '3-start' },
+					collapsed: true,
 				},
 				{
 					label: '4-iam',
 					autogenerate: { directory: '4-iam' },
+					collapsed: true,
 				},
 				{
 					label: '5-ec2',
 					autogenerate: { directory: '5-ec2' },
+					collapsed: true,
 				},
 			],
 		}),

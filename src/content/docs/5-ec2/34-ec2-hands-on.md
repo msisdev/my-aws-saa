@@ -1,6 +1,6 @@
 ---
 title: 034 ec2 hands-on
-description:
+ 
 ---
 
 ## Launch EC2

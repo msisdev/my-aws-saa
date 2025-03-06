@@ -1,7 +1,7 @@
 ---
 Parameters:
-  SecurityGroupDescription:
-    Description: Security Group Description
+  SecurityGroup 
+      Security Group Description
     Type: String
 
 Resources:
@@ -25,7 +25,7 @@ Resources:
   SSHSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
-      GroupDescription: Enable SSH access via port 22
+      Group  Enable SSH access via port 22
       SecurityGroupIngress:
         - CidrIp: 0.0.0.0/0
           FromPort: 22
@@ -36,7 +36,7 @@ Resources:
   ServerSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
-      GroupDescription: !Ref SecurityGroupDescription
+      Group  !Ref SecurityGroupDescription
       SecurityGroupIngress:
         - IpProtocol: tcp
           FromPort: 80
@@ -49,5 +49,5 @@ Resources:
 
 Outputs:
   ElasticIP:
-    Description: Elastic IP Value
+      Elastic IP Value
     Value: !Ref MyEIP

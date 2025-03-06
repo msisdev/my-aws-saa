@@ -1,6 +1,6 @@
 ---
 title: 039 ssh linux mac
-description:
+ 
 ---
 
 1. Copy public IPv4 address

@@ -1,6 +1,6 @@
 ---
 title: 038 ssh
-description:
+ 
 ---
 
 | OS | SSH | PuTTY | EC2 Insatnce Connect |

@@ -1,6 +1,6 @@
 ---
 title: 023 aws cli hands-on
-description:
+ 
 ---
 
 ## Create access key

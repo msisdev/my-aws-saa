@@ -1,6 +1,6 @@
 ---
 title: 035 ec2 instance type
-description:
+ 
 ---
 
 ## Overview

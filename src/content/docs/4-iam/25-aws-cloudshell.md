@@ -1,6 +1,6 @@
 ---
 title: 025 aws cloudshell
-description:
+ 
 ---
 
 Click terminal icon on the top
