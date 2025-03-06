@@ -11,18 +11,26 @@ export default defineConfig({
 				github: 'https://github.com/withastro/starlight',
 			},
 			sidebar: [
+				// {
+				// 	label: 'Guides',
+				// 	items: [
+				// 		// Each item here is one entry in the navigation menu.
+				// 		{ label: 'Example Guide', slug: 'guides/example' },
+				// 	],
+				// },
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					label: '3-start',
+					autogenerate: { directory: '3-start' },
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: '4-iam',
+					autogenerate: { directory: '4-iam' },
+				},
+				{
+					label: '5-ec2',
+					autogenerate: { directory: '5-ec2' },
 				},
 			],
 		}),
 	],
-});
+})
