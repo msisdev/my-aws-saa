@@ -8,7 +8,7 @@ import cloudflare from '@astrojs/cloudflare';
 export default defineConfig({
   integrations: [
       starlight({
-          title: 'My Docs',
+          title: 'AWS SAA',
           social: {
               github: 'https://github.com/msisdev/my-aws-saa',
           },
