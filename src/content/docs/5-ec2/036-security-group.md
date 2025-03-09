@@ -32,7 +32,7 @@ If your app gives "connection refused" error, then ...
 > All outbound traffic is authorised by default
 
 ## Referencing other security groups
-![referencing diagram](/5-ec2/36-referencing.png)
+![referencing diagram](/5-ec2/036-referencing.png)
 You can write rule on another security group.
 
 
