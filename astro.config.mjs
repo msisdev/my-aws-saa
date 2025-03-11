@@ -53,6 +53,11 @@ export default defineConfig({
           autogenerate: { directory: '7-ec2-storage' },
           collapsed: true,
         },
+        {
+          label: '8-elb-and-asg',
+          autogenerate: { directory: '8-elb-and-asg' },
+          collapsed: true,
+        },
       ],
     }),
 	],
