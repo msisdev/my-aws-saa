@@ -80,6 +80,8 @@ Same account access
 Resource based policy support
 - S3, SNS, SQS, ...
 
+대부분 IAM Role 기반임
+
 
 
 
@@ -182,3 +184,4 @@ Auto remediation
 
 
 
+## 
