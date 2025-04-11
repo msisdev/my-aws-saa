@@ -420,3 +420,72 @@ Route table for egress-only
 
 
 ## 352 Networking Cost
+Within AZ
+- private IP is free
+
+Cross AZ
+- private IP $0.01/GB
+- public IP $0.02/GB
+
+Cross region
+- $0.02/GB
+
+### Egress Traffic
+Egress cost is high
+- Use Direct Connect location in same AWS region
+
+### S3 Tranfer
+- S3 ingress is free
+- S3 egress $0.09/GB
+- S3 Transfer Acceleration + $0.04~$0.08
+- S3 to CloudFront is free
+- CloudFront egress $0.085/GB
+- cross region replication $0.02
+
+### NAT Gateway vs Gateway VPC Endpoint
+NAT Gateway + Internet Gateway
+- $0.045
+- $0.045 data process 
+- $0.09 cross region
+- free same region
+
+VPC Endpoint + S3
+- $0.01 ingress same region
+- $0.01 egress same region
+
+
+
+
+## 353 AWS Network Firewall
+### So far...
+- Network Access Control List (NACL)
+- VPC Security Group
+- AWS WAF
+- AWS Shield
+- AWS Shield Advanced
+- AWS Firewall Manager
+
+### AWS Network Firewall
+- Protect entire VPC
+- Layer 3 to Layer 7
+- outbound/inbound
+- to/from Direct Connect & Site-to-Site VPN
+
+Internally, AWS Network Firewall uses AWS Gateway Load Balancer
+
+Rules can be managed cross account by AWS Firewall Manager and apply on many VPCs
+
+### Fine Grained Control
+1000s of rules
+- IP, port
+- Protocol
+- Stateful domain list rule group
+- Regex
+
+Other feature
+- Traffic filtering: allow, drop or alert
+- Active flow inspection: intrusion-prevention capabilities
+- send logs to
+  - S3, CloudWatch Logs, Kinesis Data Firehose
+
+
